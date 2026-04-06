@@ -4,6 +4,7 @@ class GamesController < ApplicationController
   end
 
   def score
-    raise
+    @word = params[:word]
+    @given_letters = params[:letters]
   end
 end
